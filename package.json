@@ -1,0 +1,20 @@
+{
+  "name": "black-tech-nola-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "cucumber-js",
+    "test:services": "cucumber-js --tags @service",
+    "test:workflow": "cucumber-js --tags @workflow",
+    "test:harness": "node --test scripts/harness.test.js",
+    "checkpoint": "node scripts/checkpoint.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "13.3.0"
+  }
+}
